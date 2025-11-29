@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Riley Strauman">
+        <meta name="description" content="Images in HTML">
+        <meta name="keywords" content="html, css, web, web development, javascript">
+        <title>Cookies</title>
+        <link rel="icon" href="./assets/media/favicon.png?v=2" type="image/x-icon">
+        <link rel="Stylesheet" href="assets/styles/style.css" media="all">
+    </head>
+<body>
+    <main>
+        <div id="overlay"></div>
+        <div class="hero">
+            <h1>Hello world!</h1>
+        </div>
+        <dialog class="cookie-modal">
+            <h2>Cookies</h2>
+            <p>We use cookies to improve your experience on our website. By clicking "Accept", you agree to the use of cookies for marketing and analytics purposers.</p>
+            <div class="btn-flex">
+                <div class="accept">Accept</div>
+                <div class="settings">Settings</div>
+            </div>
+        </dialog>
+        <dialog class="settings-modal">
+            <h2>Settings</h2>
+            <div class="switch-container">
+                <label for="browser" class="browser-label">Browser</label>
+                <label class="switch">
+                    <input type="checkbox" id="browser" class="browser" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="switch-container">
+                <label for="os" class="os-label">Operating System</label>
+                <label class="switch">
+                    <input type="checkbox" id="os" class="os" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="switch-container">
+                <label for="width" class="width-label">Screen Width</label>
+                <label class="switch">
+                    <input type="checkbox" id="width" class="width" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="switch-container" id="switch">
+                <label for="height" class="height-label">Screen Height</label>
+                <label class="switch">
+                    <input type="checkbox" id="height" class="height" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <div class="save">Save Preferences</div>
+        </dialog>
+    </main>
+    <script src="./assets/scripts/app.js" defer></script>
+</body>
+</html>

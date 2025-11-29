@@ -1,0 +1,149 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero {
+    margin: 0;
+    padding: 0;
+    background: url('../media/hero-banner.jpg');
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    position: relative;
+}
+
+h1 {
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    padding: 0 10px
+}
+
+dialog {
+    background-color: #fff;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    padding: 20px;
+    border: none;
+    outline: none;
+}
+
+p {
+    padding: 10px;
+}
+
+.btn-flex {
+    display: flex;
+    justify-content: space-evenly;
+    place-items: center;
+    padding: 10px;
+}
+
+.accept, .settings {
+    border-radius: 50px;
+    padding: 10px 20px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: all 0.25s ease-in-out;
+}
+
+.accept, .save {
+    background-color: blue;
+    color: #fff;
+}
+
+.settings {
+    background-color: #fff;
+    color: blue;
+    border: 1px solid blue;
+}
+
+.accept:hover {
+    cursor: pointer;
+    background-color: rgb(0, 0, 147);
+}
+
+.settings:hover, .save:hover {
+    cursor: pointer;
+    background-color: #9b9b9b;
+    border: 1px solid transparent;
+}
+
+.switch-container {
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.switch {
+    position: relative;
+    width: 50px;
+    height: 26px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background-color: rgb(212, 212, 212);
+    border-radius: 50px;
+    transition: all 0.25s ease-in-out;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: 3px;
+    bottom: 3px;
+
+    background-color: #fff;
+    border-radius: 50%;
+    transition: all 0.25s ease-in-out;
+}
+
+.switch input:checked + .slider {
+    background-color: rgb(133, 0, 133);
+}
+
+.switch input:checked + .slider:before {
+    transform: translateX(24px);
+}
+
+.save {
+    display: inline-flex;
+    padding: 6px 10px;
+    border-radius: 50px;
+    align-self: flex-start;
+}
+
+#switch {
+    padding-bottom: 20px;
+}
